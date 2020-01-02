@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>페르소나</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="" />
+<link rel="apple-touch-icon" href=""/>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+<link rel="stylesheet" href="../css/allcss.css?v1"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--푸시 -->
+<link rel="stylesheet" type="text/css" href="../css/SlidePush/default.css" />
+<link rel="stylesheet" type="text/css" href="../css/SlidePush/component.css" />
+<script src="../js/SlidePush/modernizr.custom.js"></script>
+<!--//푸시 -->
+
+<!--  모달 팝업창 -->
+<link type="text/css" rel="stylesheet" href="../css/popup/featherlight.min.css" />
+<style type="text/css">
+@media all {
+.lightbox {
+	display: none;
+}
+}
+</style>
+<!--페이지로드-->
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script>
+$(function(){
+$("#top").load("_top1.html");
+$("#footer").load("_footer.html");
+$("#quick_menu").load("_quick_menu.html");
+ });
+</script>
+
+</head>
+
+
+<!--//왼쪽 전체메뉴 푸시 -->
+<!--//상단이미지/타이틀  영역 -->
+<!--본문 -->
+ <div class="contbg">
+<!-- -->
+  <div class="h4_title2 sp_mt wow fadeInRight" data-wow-delay="0.2s">
+	<div class="um">1</div>
+    <div class="tx_b">감정 분석 테스트 </div>
+    <div class="tx_s">대화 분석을 통한 감전 분석을 경험해보세요.</div>
+  </div>
+  <div class="sub0201  sp_mb wow fadeInUp" data-wow-delay="0.3s">
+     <div class="incont">
+		<div class="title"> "오늘 기분은 어떠신가요? <div class="mobile_view"></div>기분을 입력해보세요"</div>
+		 <div class="search_box">
+			  <div class="inputbox"><input type="text" title="기분입력"></div>
+	          <button class="btn">ENTER</button>
+		 </div>
+	   <div class="search_result">
+		      <div class="photo"><img src="../images/emotion/expression/Happiness.jpg"  alt=""/></div>
+	     <div class="inbox_left">
+           <div class="inin">
+             <div class="em_icon color_Anger"><em>분노</em>Anger</div>
+             <div class="em_line">
+               <div class="percent color_Anger"></div>
+             </div>
+           </div>
+			   <div class="inin">
+             <div class="em_icon color_Contempt"><em>경멸</em>Contempt</div>
+             <div class="em_line">
+               <div class="percent color_Contempt"></div>
+             </div>
+           </div>
+			   <div class="inin">
+             <div class="em_icon color_Disgust"><em>혐오</em>Disgust</div>
+             <div class="em_line">
+               <div class="percent color_Disgust"></div>
+             </div>
+           </div>
+			   <div class="inin">
+             <div class="em_icon color_Fear"><em>두려움</em>Fear</div>
+             <div class="em_line">
+               <div class="percent color_Fear"></div>
+             </div>
+           </div>
+         </div>
+
+		   <div class="inbox_right">
+           <div class="inin">
+             <div class="em_icon color_Happiness"><em>행복</em>Happiness</div>
+             <div class="em_line">
+               <div class="percent color_Happiness"></div>
+             </div>
+           </div>
+			   <div class="inin">
+             <div class="em_icon color_Neutral"><em>중립</em> Neutral</div>
+             <div class="em_line">
+               <div class="percent color_Neutral"></div>
+             </div>
+           </div>
+			   <div class="inin">
+             <div class="em_icon color_Sadness"><em>슬픔</em>Sadness</div>
+             <div class="em_line">
+               <div class="percent color_Sadness"></div>
+             </div>
+           </div>
+			   <div class="inin">
+             <div class="em_icon color_Surprise"><em>놀람</em>surprised</div>
+             <div class="em_line">
+               <div class="percent color_Surprise"></div>
+             </div>
+           </div>
+         </div>
+	   </div>
+     </div>
+  </div>
+<!-- -->
+
+<!--푸시 스크립트  -->
+<script src="../js/SlidePush/classie.js"></script>
+<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+
+				body = document.body;
+/* 왼쪽 퀵메뉴  */
+			showLeft.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+
+			};
+	showLeft_close.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+
+			};
+
+
+		</script>
+<!--//푸시 스크립트  -->
+
+<!--모달 팝업 스크립트  -->
+<script src="../js/popup/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//stats.g.doubleclick.net/dc.js','ga');
+
+			ga('create', 'UA-5342062-6', 'noelboss.github.io');
+			ga('send', 'pageview');
+</script>
+<!--//모달 팝업 스크립트  -->
+<!-- 하단 스크립트 : 스크롤/시간차 -->
+<script src="../js/animate/wow.min.js"></script>
+<script src="../js/animate/custom.js"></script>
+</body>
+</html>
