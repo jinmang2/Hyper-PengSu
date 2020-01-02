@@ -1,486 +1,387 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<title>페르소나</title>
-<meta charset="utf-8">
-<link rel="shortcut icon" href="" />
-<link rel="apple-touch-icon" href=""/>
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
-<link rel="stylesheet" href="../css/allcss.css?v1"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<html xmlns='http://www.w3.org/1999/xhtml' class=" js ">
+  <head runat='server'>
+    <meta charset="utf-8">
+    <title>페르소나</title>
+    <link rel="shortcut icon" href(unknown)>
+    <link rel="apple-touch-icon" href(unknown)>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/allcss.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--푸시 -->
+    <link rel="stylesheet" type="text/css" href="../css/SlidePush/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/SlidePush/component.css" />
+    <script src="../js/SlidePush/modernizr.custom.js"></script>
+    <!--//푸시 -->
+    <!--페이지로드-->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script>
+    $(function(){
+    $("#top").load("_top1.html");
+    $("#footer").load("_footer.html");
+    $("#quick_menu").load("_quick_menu.html");
+     });
+    </script>
+    	<!--챗봇창 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    	  $(".btn_Chatbot").click(function(){
+           $("#Chatbot_open").fadeIn();
+    		$("#Chatbot_close").hide();
+        });
+    	 $(".btn_Chatbot_close").click(function(){
+           $("#Chatbot_open").hide();
+    		$("#Chatbot_close").fadeIn();
+        });
 
-<!--푸시 -->
-<link rel="stylesheet" type="text/css" href="../css/SlidePush/default.css" />
-<link rel="stylesheet" type="text/css" href="../css/SlidePush/component.css" />
-<script src="../js/SlidePush/modernizr.custom.js"></script>
-<!--//푸시 -->
-
-<!--  모달 팝업창 -->
-<link type="text/css" rel="stylesheet" href="../css/popup/featherlight.min.css" />
-<style type="text/css">
-@media all {
-.lightbox {
-	display: none;
-}
-}
-</style>
-<!--페이지로드-->
-<script src="../js/jquery-1.10.2.min.js"></script>
-<script>
-$(function(){
-$("#top").load("_top1.html");
-$("#footer").load("_footer.html");
-$("#quick_menu").load("_quick_menu.html");
- });
-</script>
-	<!--챗봇창 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-	  $(".btn_Chatbot").click(function(){
-       $("#Chatbot_open").fadeIn();
-		$("#Chatbot_close").hide();
     });
-	 $(".btn_Chatbot_close").click(function(){
-       $("#Chatbot_open").hide();
-		$("#Chatbot_close").fadeIn();
-    });
-
-});
-
-</script>
-<!--//챗봇창 -->
-</head>
-<!--pagehead-->
-
-<div id="top"></div>
-<!--//pagehead-->
-<!--왼쪽 전체메뉴 푸시 -->
-<div class="icon_allmenu mobile_menu" id="showLeft"></div>
-<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left mobile_menu" id="cbp-spmenu-s1">
-  <div id="showLeft_close" class="popup_close"><img src="../images/icon/icon_close.svg" alt=""/></div>
-  <h3>Menu </h3>
-  <div id="quick_menu"></div>
-</nav>
-
-<!--//왼쪽 전체메뉴 푸시 -->
-
-<!--상단이미지/타이틀  영역 - Technology -->
-<div class="sub_top2 sub_topbg4_Happiness">
-  <div class="incont">
-  <div class="top_title_img wow fadeInRight" data-wow-delay="0.1s"><img src="../images/emotion/Happiness/topimg04.png" alt=""/></div>
-  <div class="top_title_b wow fadeInRight" data-wow-delay="0.2s">Feature</div>
-    <div class="top_title_m wow fadeInUp" data-wow-delay="0.3s">Persona System creates <div class="mobile_view"></div>the right technology <br>
-for artificial intelligence</div>
-	   <div class="top_title_s wow  fadeInUp" data-wow-delay="0.4s">페르소나시스템은 인공지능의 <div class="mobile_view"></div>적정기술을 만들어갑니다<br>
-
-</div>
-  </div>
-</div>
-<!--//상단이미지/타이틀  영역 -->
-<!--본문 -->
- <div class="contbg">
-<!-- -->
-  <div class="h4_title2 sp_mt wow fadeInRight" data-wow-delay="0.2s">
-	<div class="um">1</div>
-    <div class="tx_b">감정 분석 테스트 </div>
-    <div class="tx_s">대화 분석을 통한 감전 분석을 경험해보세요.</div>
-  </div>
-  <div class="sub0201  sp_mb wow fadeInUp" data-wow-delay="0.3s">
-     <div class="incont">
-		<div class="title"> "오늘 기분은 어떠신가요? <div class="mobile_view"></div>기분을 입력해보세요"</div>
-		 <div class="search_box">
-			  <div class="inputbox"><input type="text" title="기분입력"></div>
-	          <button class="btn">ENTER</button>
-		 </div>
-	   <div class="search_result">
-		      <div class="photo"><img src="../images/emotion/expression/Happiness.jpg"  alt=""/></div>
-	     <div class="inbox_left">
-           <div class="inin">
-             <div class="em_icon color_Anger"><em>분노</em>Anger</div>
-             <div class="em_line">
-               <div class="percent color_Anger"></div>
-             </div>
-           </div>
-			   <div class="inin">
-             <div class="em_icon color_Contempt"><em>경멸</em>Contempt</div>
-             <div class="em_line">
-               <div class="percent color_Contempt"></div>
-             </div>
-           </div>
-			   <div class="inin">
-             <div class="em_icon color_Disgust"><em>혐오</em>Disgust</div>
-             <div class="em_line">
-               <div class="percent color_Disgust"></div>
-             </div>
-           </div>
-			   <div class="inin">
-             <div class="em_icon color_Fear"><em>두려움</em>Fear</div>
-             <div class="em_line">
-               <div class="percent color_Fear"></div>
-             </div>
-           </div>
-         </div>
-
-		   <div class="inbox_right">
-           <div class="inin">
-             <div class="em_icon color_Happiness"><em>행복</em>Happiness</div>
-             <div class="em_line">
-               <div class="percent color_Happiness"></div>
-             </div>
-           </div>
-			   <div class="inin">
-             <div class="em_icon color_Neutral"><em>중립</em> Neutral</div>
-             <div class="em_line">
-               <div class="percent color_Neutral"></div>
-             </div>
-           </div>
-			   <div class="inin">
-             <div class="em_icon color_Sadness"><em>슬픔</em>Sadness</div>
-             <div class="em_line">
-               <div class="percent color_Sadness"></div>
-             </div>
-           </div>
-			   <div class="inin">
-             <div class="em_icon color_Surprise"><em>놀람</em>surprised</div>
-             <div class="em_line">
-               <div class="percent color_Surprise"></div>
-             </div>
-           </div>
-         </div>
-	   </div>
-     </div>
-  </div>
-<!-- -->
-  <div class="h4_title2 wow fadeInRight" data-wow-delay="0.2s">
-	<div class="um">2</div>
-    <div class="tx_b">챗봇 템플릿 기능  </div>
-	<div class="tx_bs">90%에서 시작하는 챗봇 제작, 쉽고 간편하게 제작해보세요.  </div>
-    <div class="tx_s">빅데이터와 인공지능 기반 자연어생성기로 단시간에 데이터를 생성하고 수집하여 챗봇을 제작합니다. 대화 품질은 데이터에 따라 좌우 됩니다.<br>
-	  ROCHA.AI는 수 많은 시도를 거쳐 정확도 높은 데이터를 생성하는 엔진을 개발했습니다.</div>
-  </div>
-  <div class="sub0202  sp_mb wow fadeInUp" data-wow-delay="0.3s">
-     <div class="imgbox_center">
-        	<img src="../images/sub/incont_01_02.jpg.jpg"  alt=""/>
-	 </div>
-  </div>
-<!-- -->
-  <div class="h4_title2  wow fadeInRight" data-wow-delay="0.2s">
-	<div class="um">3</div>
-    <div class="tx_b">AI와 상담사가 함께하는 하이브리드 CS 기능 </div>
-	<div class="tx_bs">필요한 순간에는 고객에게 직접 말을 걸어보세요.  </div>
-    <div class="tx_s">ROCHA.AI 이용 시 3개월 간 상담원 응대 서비스를 제공합니다. 3개월 동안 답변 못한 질문을 상담원이 응대하여 답변을 제공하고,<div class="pc_view"></div>
-미답변 질문을 따로 분류하여 자가 학습을 통해 답변율을 높입니다. 물론 고객사의 전문 상담사가 대화에 참여하여
-직접 고객을 응대할 수도 있습니다.</div>
-  </div>
-  <div class="sub0203  sp_mb wow fadeInUp" data-wow-delay="0.3s">
-     <div class="imgbox_center">
-        <div class="img"><img src="../images/sub/incont_01_01.jpg"  alt=""/> </div>
-	 </div>
-  </div>
-<!-- -->
-  <div class="h4_title2  wow fadeInRight" data-wow-delay="0.2s">
-	<div class="um">4</div>
-    <div class="tx_b">답변 못한 질문 학습 기능</div>
-	<div class="tx_bs">ROCHA.AI는 답변 못한 질문을 분류해 스스로 학습하며, <div class="mobile_view"></div>더욱 똑똑해집니다
- </div>
-    <div class="tx_s">답변 못한 질문을 학습하기 위해 문장을 텍스트 데이터 낱개의 요소로 분리하고, 명사형의 분류명을 인텐트와 엔티티로 부여하여 대화 엔진을 학습시키는 모듈 입니다.
-</div>
-  </div>
-  <div class="sub0204  sp_mb wow fadeInUp" data-wow-delay="0.3s">
-     <div class="imgbox_center">
-        <img src="../images/sub/incont_01_03.jpg" alt=""/>
-	 </div>
-    <div class="setpbox"><ul><li>
-      <div class="stepum">
-        <div class="t1">STEP</div> <div class="t2">01</div>
-      </div>
-      <div class="tx1">답변 못한 질문 분류</div><div class="tx2">사용자가 답변 못한 질문을  <br>
-분류합니다.
-</div>
-    </li>
-		<li>
-      <div class="stepum">
-        <div class="t1">STEP</div> <div class="t2">02</div>
-      </div>
-      <div class="tx1">Intent, Entity추출</div><div class="tx2">인텐트와 엔티티를 추출하여  <br>
-학습을 진행합니다.
-
-</div>
-    </li>
-		<li>
-      <div class="stepum">
-        <div class="t1">STEP</div> <div class="t2">03</div>
-      </div>
-      <div class="tx1">학습 완료</div><div class="tx2">로차는 사용하면 할수록  <br>
-똑똑해집니다.
-
-</div>
-    </li>
-    </ul></div>
-  </div>
-
-	<!-- -->
-  <div class="h4_title2  wow fadeInRight" data-wow-delay="0.2s">
-	<div class="um">5</div>
-    <div class="tx_b">다양한 채널 제공</div>
-	<div class="tx_bs">고객을 가장 빨리 만나는 방법, 다양한 채널을 활용하세요
- </div>
-    <div class="tx_s">ROCHA.AI는 한 번의 구축으로 PC/Mobile 웹, 앱, SNS(페이스북, 카카오톡, 라인, 네이버톡톡 등)까지 다양한 채널에 제공 가능합니다. 고객이 이용하기 가장 편한 방법으로 접근할 수 있도록 다양한 채널을 통해 제공해보세요. 접근성은 만족도로 이어집니다.
-
-</div>
-  </div>
-  <div class="sub0205  sp_mb wow fadeInUp" data-wow-delay="0.3s">
-    <div class="inbox">
-      <div class="inin">
-        <div class="title">메신저/SNS</div>
-		  <ul><li>
-		    <div class="img"><img src="../images/sub/incont_01_04.jpg"  alt=""/></div>
-			   <div class="tx">카카오톡</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_05.jpg"  alt=""/></div>
-			   <div class="tx">라인</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_06.jpg"  alt=""/></div>
-			   <div class="tx">페이스북</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_07.jpg"  alt=""/></div>
-			   <div class="tx">네이버톡톡</div>
-		  </li>
-
-		  </ul>
-      </div>
-		  <div class="inin">
-        <div class="title">어플리케이션</div>
-		  <ul><li>
-		    <div class="img"><img src="../images/sub/incont_01_08.jpg"  alt=""/></div>
-			   <div class="tx">iOS <br>Application
-</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_09.jpg"  alt=""/></div>
-			   <div class="tx">Android <br>
-Application
-</div>
-		  </li>
-		  </ul>
-      </div>
-		  <div class="inin">
-        <div class="title">웹</div>
-		  <ul><li>
-		    <div class="img"><img src="../images/sub/incont_01_10.jpg"  alt=""/></div>
-			   <div class="tx">CHROME</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_11.jpg"  alt=""/></div>
-			   <div class="tx">INTERNET<br>
-
-EXPLORER
-</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_12.jpg"  alt=""/></div>
-			   <div class="tx">SAFARI</div>
-		  </li>
-
-
-		  </ul>
-      </div>
-		  <div class="inin">
-        <div class="title">디바이스</div>
-		  <ul><li>
-		    <div class="img"><img src="../images/sub/incont_01_13.jpg"  alt=""/></div>
-			   <div class="tx">MOBILE</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_14.jpg"  alt=""/></div>
-			   <div class="tx">PC</div>
-		  </li>
-			  <li>
-		    <div class="img"><img src="../images/sub/incont_01_15.jpg"  alt=""/></div>
-			   <div class="tx">KIOSK</div>
-		  </li>
-
-
-		  </ul>
-      </div>
-    </div>
-  </div>
-<!-- -->
-  <div class="h4_title2  wow fadeInRight" data-wow-delay="0.2s">
-	<div class="um">6</div>
-    <div class="tx_b">기타 기능</div>
-	<div class="tx_bs">디자인 테마 제공, 통계 분석 시스템 </div>
-    <div class="tx_s">채팅 창의 디자인 테마를 관리자에서 선택하여 사용할 수 있어 컬러 변경에 대한 부담이 없습니다. 또한, 질문 별 고객 별 주제 별 등 다양한 대화 통계를 제공합니다. 통계 결과를 마케팅에 적용해보세요.
-</div>
-  </div>
-  <div class="sub0206  sp_mb wow fadeInUp" data-wow-delay="0.2s">
-    <div class="inbox">
-      <div class="inin">
-        <div class="title1">디자인 테마</div>
-	    <div class="tx1">어드민에서 손쉽게 디자인 테마를 변경해보세요.
-			테마는 현재 총 4종이며, 관리자에서 손쉽게 변경 가능합니다.</div>
-	    <div class="imgbox2"><img src="../images/sub/incont_01_16.jpg" alt=""/></div>
-      </div>
-	   <div class="inin">
-        <div class="title2">통계 분석</div>
-	    <div class="tx1">어떤 질문을 많이 하는지, 어떤 제품이 관심이 많은지, 어느 시간대에 문의가 몰리는지, 응답 시간은 얼만지 등 고객 별, 대화 주제 별 통계를 받아보세요.
-</div>
-	    <div class="imgbox1"><img src="../images/sub/incont_01_17.jpg" alt=""/>
-	      <div class="umbox umbox_w1">
-	        <div class="st1">총 토픽 수</div>
-			<div class="st2">320</div>
-	      </div>
-			 <div class="umbox umbox_w2">
-	        <div class="st1">학습 대기 질문</div>
-			<div class="st2">320</div>
-	      </div>
-			 <div class="umbox umbox_w3" >
-	        <div class="st1">총유입수</div>
-			<div class="st2">320</div>
-	      </div>
-	    </div>
-      </div>
-
-
-    </div>
-  </div>
-</div>
-<div class="seminar02">
-  <div class="incont">
-	      <div class="title2 wow fadeInUp" data-wow-delay="0.2s">이보다 좋은 <em>인공지능</em>이 있을까요?</div>
-    <div class="s_title2 wow  fadeInUp" data-wow-delay="0.3s">정말 쉽게 제작 가능한 인공지능 서비스들을 만나보세요
-</div>
-
-	  <ul class="list wow fadeInUp" data-wow-delay="0.3s">
-      <li>
-        <div class="inline_Happiness"></div>
-        <div class="img"><img src="../images/sub/pro_img1.jpg"  alt=""/></div>
-        <div class="txbox">
-          <div class="tx1">설치가 가능한</div>
-          <div class="tx2">ROCHA.AI</div>
-          <div class="tx3">ROCHA.AI는 엔진까지 설치되는 유일한 제품입니다.<br>
-            외부 엔진 사용 없이 기업 사내 서버에 설치가 가능해 보안에 강점이 있으며 다양한 커스터마이징이 가능합니다. </div>
+    </script>
+    <!--//챗봇창 -->
+  </head>
+  <!-- pagehead -->
+  <body>
+    <div id='top'>
+      <!-- 상단영역 서브 레이아웃 1 -->
+      <header class='subhead1'>
+        <div class='inner'>
+          <div class='logo'>
+            <a href="../index.html">
+              <img src="../images/com/logo.png" alt=>
+            </a>
+          </div>
+          <div class='fr'>
+            <div class='state'>
+              <div class='color color_Happiness'></div>
+            </div>
+            <div class='topmenu'>
+              <ul>
+                <li class='on'>
+                  <a href="about.html" class='font_ov_Happiness'>About</a>
+                </li>
+                <li>
+                  <a href="products.html" class='font_ov_Happiness'>Products</a>
+                </li>
+                <li>
+                  <a href="technology.html" class='font_ov_Happiness'>Technology</a>
+                </li>
+                <li>
+                  <a href="feature.html" class='font_ov_Happiness'>Feature</a>
+                </li>
+                <li>
+                  <a href="seminar.html" class='font_ov_Happiness'>Seminar</a>
+                </li>
+                <li>
+                  <a href="contact.html" class='font_ov_Happiness'>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </li>
-      <li>
-        <div class="inline_Happiness"></div>
-        <div class="img"><img src="../images/sub/pro_img2.jpg"  alt=""/></div>
-        <div class="txbox">
-          <div class="tx1">클라우드형 챗봇</div>
-          <div class="tx2">BOTTALKS.AI</div>
-          <div class="tx3">템플릿, 토픽 기능을 사용해 쉽고 편리하게 챗봇을 만들어보세요.
-            BOTTALKS.AI는 사업 및 업무용도라도 무료로 시작할 수 있습니다. </div>
-        </div>
-      </li>
-      <li>
-        <div class="inline_Happiness"></div>
-        <div class="img"><img src="../images/sub/pro_img3.jpg"  alt=""/></div>
-        <div class="txbox">
-          <div class="tx1">내 손안의 키오스크</div>
-          <div class="tx2">AI KIOSK</div>
-          <div class="tx3">AI 대화엔진을 연계한 스마트한 키오스크로 쉬운 인터페이스를 제공하며,
-            이동중에도 언제 어디서나 사용 가능한
-            모바일 키오스크를 함께 제공합니다. </div>
-        </div>
-      </li>
-      <li>
-        <div class="inline_Happiness"></div>
-        <div class="img"><img src="../images/sub/pro_img4.jpg"  alt=""/></div>
-        <div class="txbox">
-          <div class="tx1">무인콜센터 </div>
-          <div class="tx2">CALLBOT</div>
-          <div class="tx3">상담사를 기다릴 필요없이 24시간 바로 상담 가능한 CALLBOT, 음성 상담과 보이는 ARS화면을 제공합니다. </div>
-        </div>
-      </li>
-    </ul></div>
-</div>
-<!--//본문 -->
-
-<!--pagefooter-->
-<div id="footer"></div>
-<!--//pagefooter-->
-<!--챗봇창 open  -->
-<div class="messenger" id="Chatbot_open" style="display: none">
-  <div class="ms_top color_Happiness">
-    <div class="name">SONA</div>
-    <div class="st">대기중
-      <div class="st_icon st_color1"></div>
+      </header>
+      <!-- 상단영역 -->
     </div>
-    <div class="close btn_Chatbot_close" ><img src="../images/com/m_close.png" alt=""/></div>
-    <div class="photo"><img src="../images/emotion/expression/Happiness.jpg" alt=""/></div>
-  </div>
-  <div class="ms_talk">
-    <div class="talk_you">
-      <div class="photo"><img src="../images/emotion/expression/Happiness.jpg" alt=""/></div>
-      <div class="bubble">
-        <div class="triangle"></div>
-        여기에  class "bubble"의 내용 입력
-        <div class="time">1:03 PM</div>
+    <!-- pagehead -->
+    <!-- 왼쪽 전체메뉴 푸시 -->
+    <div class='icon_allmenu mobile_menu' id='showLeft'></div>
+    <nav class='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left mobile_menu' id='cbp-spmenu-s1'>
+      <div id='snowLeft_close' class='popup_close'>
+        <img src="../img/icon/icon_close.svg" alt>
       </div>
-      <div class="bubble_down" onClick=""> 회사소개 다운로드 </div>
-    </div>
-    <div class="talk_me">
-      <div class="bubble">
-        <div class="triangle"></div>
-        여기에  class "bubble"의 내용 입력
-        <div class="time">1:03 PM</div>
+      <h3>Menu </h3>
+      <div id='quick_menu'>
+        <ul>
+          <li class='on'>
+            <a href="../cont/about.html" class='color_blue'>About</a>
+          </li>
+          <li>
+            <a href="../cont/products.html" class='color_blue'>Products</a>
+          </li>
+          <li>
+            <a href="../cont/technology.html" class='color_blue'>Technology</a>
+          </li>
+          <li>
+            <a href="../cont/feature.html" class='color_blue'>Feature</a>
+          </li>
+          <li>
+            <a href="../cont/seminar.html" class='color_blue'>Seminar</a>
+          </li>
+          <li>
+            <a href="../cont/contact.html" class='color_blue'>Contact</a>
+          </li>
+        </ul>
       </div>
-      <div class="bubble_down" onClick=""> 회사소개 다운로드 </div>
+    </nav>
+    <!-- 왼쪽 전체메뉴 푸시 -->
+    <!-- 상단이미지/타이틀 영역 -Technology -->
+    <div class='sub_top2 sub_topbg4_Happiness'>
+      <div class='incont'>
+        <div class='top_title_img wow fadeInRight animated' data-wow-delay="0.1s" style=
+        "visibility: visible;-webkit-animation=delay: 0.1s; -moz-animation-delay: 0.1s; animation-
+        delay: 0.1s;">
+          <img src="../images/emotion/Happiness/topimg04.png" alt>
+        </div>
+        <div class='top_title_b wow fadeInRight animated' data-wow-delay="0.2s" style=
+        "visibility: visible;-webkit-animation=delay: 0.2s; -moz-animation-delay: 0.2s; animation-
+        delay: 0.2s">Feature</div>
+        <div class='top_title_m wow fadeInUp animated' data-wow-delay="0.3s" style=
+        "visibility: visible;-webkit-animation=delay: 0.3s; -moz-animation-delay: 0.3s; animation-
+        delay: 0.3s">
+          "Persona System creates "
+          <div class='mobile_view'></div>
+          "the right technology "
+          <br>
+          "
+          for artificial intelligence"
+        </div>
+        <div class='top_title_s wow fadeInUp animated' data-wow-delay="0.4s" style=
+        "visibility: visible;-webkit-animation=delay: 0.4s; -moz-animation-delay: 0.4s; animation-
+        delay: 0.4s">
+          "페르소나시스템은 인공지능의 "
+          <div class='mobile_view'></div>
+          "적정기술을 만들어갑니다"
+          <br>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="ms_talk_wt">
-    <input type="text">
-    <div class="wr_btn color_Happiness"><img src="../images/com/talk_wr.png"  alt=""/></div>
-  </div>
-</div>
-		<!--//챗봇창 open -->
-		<!--챗봇창 close -->
-<div class="messenger2  btn_Chatbot" id="Chatbot_close">
-  <div class="photo wow fadeInUp" data-wow-delay="0.5s"><img src="../images/emotion/expression/Happiness.jpg" alt=""/></div>
-  <div class="bubble color_Happiness wow fadeInLeft" data-wow-delay="0.6s">
-    <div class="triangle triangle_Happiness"></div>
-    어떤 제품에 관심이 많으신가요?</div>
-</div>
-<!--//챗봇창 close -->
-<!--푸시 스크립트  -->
-<script src="../js/SlidePush/classie.js"></script>
-<script>
-			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+    <!-- 상단이지미/타이틀 영역-->
+    <!-- 본문 -->
+    <div class='contbg'>
+      <!--  -->
+      <div class='h4_title2 sp_mt wow fadeInRight animated' data-wow-delay="0.2s" style=
+      "visibility: visible;-webkit-animation=delay: 0.2s; -moz-animation-delay: 0.2s; animation-
+      delay: 0.2s">
+        <div class='um'>1</div>
+        <div class='tx_b'>감정 분석 테스트</div>
+        <div class='tx_s'>대화 분석을 통한 감정 분석을 경험해보세요.</div>
+      </div>
+      <div class='sub0201 sp_mb wow fadeInUp animated' data-wow-delay="0.3s" style=
+      "visibility: visible;-webkit-animation=delay: 0.3s; -moz-animation-delay: 0.3s; animation-
+      delay: 0.3s">
+        <div class='incont'>
+          <div class='title'>
+            " "오늘 기분은 어떠신가요? "
+            <div class='mobile_view'></div>
+            "기분을 입력해보세요""
+          </div>
+          <div class='search_box'>
+            <div class='inputbox'>
+              <input type="text" title='기분입력'>
+            </div>
+            <button class='btn'>ENTER</button>
+          </div>
+          <div class='search_result'>
+            <div class='photo'>
+              <img src="../images/emotion/expression/Happiness.jpg" alt>
+            </div>
+            <div class='inbox_left'>
+              <div class='inin'>
+                <div class='em_icon color_Anger'>
+                  <em>분노</em>
+                  Anger
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Anger'></div>
+                </div>
+              </div>
+              <div class='inin'>
+                <div class='em_icon color_Contempt'>
+                  <em>경멸</em>
+                  Contempt
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Contempt'></div>
+                </div>
+              </div>
+              <div class='inin'>
+                <div class='em_icon color_Disgust'>
+                  <em>혐오</em>
+                  Disgust
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Disgust'></div>
+                </div>
+              </div>
+              <div class='inin'>
+                <div class='em_icon color_Fear'>
+                  <em>두려움</em>
+                  Fear
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Fear'></div>
+                </div>
+              </div>
+            </div>
+            <div class='inbox_right'>
+              <div class='inin'>
+                <div class='em_icon color_Happiness'>
+                  <em>행복</em>
+                  Happiness
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Happiness'></div>
+                </div>
+              </div>
+              <div class='inin'>
+                <div class='em_icon color_Neutral'>
+                  <em>중립</em>
+                  Neutral
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Neutral'></div>
+                </div>
+              </div>
+              <div class='inin'>
+                <div class='em_icon color_Sadness'>
+                  <em>슬픔</em>
+                  Sadness
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Sadness'></div>
+                </div>
+              </div>
+              <div class='inin'>
+                <div class='em_icon color_Surprise'>
+                  <em>놀람</em>
+                  Surprise
+                </div>
+                <div class='em_line'>
+                  <div class='percent color_Surprise'></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class='h4_title2 wow fadeInRight animated' data-wow-delay="0.2s" style=
+      "visibility: visible;-webkit-animation=delay: 0.2s; -moz-animation-delay: 0.2s; animation-
+      delay: 0.2s"></div>
+    </div>
+    <!-- 본문 -->
+    <!-- pagefooter -->
+    <div id='footer'>
+      <footer>
+        <div class='bottom_copy footer_bpd'>
+          <div class='inner'>
+            <div class='f1'>
+              "(주)페르소나시스템 : 서울시 서초구 서초동 16423 진송빌딩 2층 / "
+              <br>
+              "
+              Tel . 02-762-8763  | Mail . admin@bottalks.co.kr  | 대표 : 유승재"
+              <br>
+              "
+              ©2019  personasystem  All Rights Reserved.
 
-				body = document.body;
-/* 왼쪽 퀵메뉴  */
-			showLeft.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+              "
+            </div>
+            <div class='fr'>
+              <a href="#">
+                <div class='sns_icon'>
+                  <img src="../images/icon/sns1.svg" alt>
+                </div>
+              </a>
+              <a href="#">
+                <div calss='sns_icon'>
+                  <img src="../images/icon/sns2.svg" alt>
+                </div>
+              </a>
+              <a href="#">
+                <div class='sns_icon'>
+                  <img src="../images/icon/sns3.svg" alt>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- pagefooter -->
+    <!-- 챗봇창 open -->
+    <div class="messenger" id="Chatbot_open" style="display: none">
+      <div class='ms_top color_Happiness'>
+        <div class="name">SONA</div>
+        <div class="st">
+          "대기중"
+          <div class="st_icon st_color1"></div>
+        </div>
+        <div class="close btn_Chatbot_close">
+          <img src="../images/com/m_close.png" alt>
+        </div>
+        <div class='photo'>
+          <img src="../images/emotion/expression/Happiness.jpg" alt>
+        </div>
+      </div>
+      <div class='ms_talk'>
+        <div class='talk_you'>
+          <div class='photo'>
+            <img src="../images/emotion/expression/Happiness.jpg" alt>
+          </div>
+          <div class='bubble'>
+            <div class='triangle'></div>
+            "여기에 class "bubble"의 내용 입력"
+            <div class="time">1:03 PM</div>
+          </div>
+          <div class="bubble_down" onclick> 회사소개 다운로드 </div>
+        </div>
+        <div class='talk_me'>
+          <!-- <div class='photo'>
+            <img src="../images/emotion/expression/Happiness.jpg" alt>
+          </div> -->
+          <div class='bubble'>
+            <div class='triangle'></div>
+            "여기에 class "bubble"의 내용 입력"
+            <div class="time">1:03 PM</div>
+          </div>
+          <div class="bubble_down" onclick> 회사소개 다운로드 </div>
+        </div>
+      </div>
+      <div class='ms_talk_wt'>
+        <input type="text">
+        <div class='wr_btn color_Happiness'>
+          <img src="../images/com/talk_wr.png" alt>
+        </div>
+      </div>
+    </div>
+    <!-- 챗봇창 open -->
+    <!-- 챗봇창 close -->
+    <div class="messenger2 btn_Chatbot" id="Chatbot_close">
+      <div class="photo wow fadeInUp animated" data-wow-delay="0.2s" style=
+      "visibility: visible;-webkit-animation=delay: 0.5s; -moz-animation-delay: 0.5s; animation-
+      delay: 0.5s">
+        <img src="../images/emotion/expression/Happiness.jpg" alt>
+      </div>
+      <div class="bubble color_Happiness wow fadeInLeft animated" data-wow-delay="0.6s" style=
+      "visibility: visible;-webkit-animation=delay: 0.6s; -moz-animation-delay: 0.6s; animation-
+      delay: 0.6s">
+        <div class="triangle triangle_Happiness"></div>
+        "어떤 제품에 관심이 많으신가요?"
+      </div>
+    </div>
+    <!-- 챗봇창 close -->
+    <!-- 푸시 스크립트 -->
+    <script src="../js/SlidePush/classie.js"></script>
+    <script>
 
-			};
-	showLeft_close.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 
-			};
+    				body = document.body;
+    /* 왼쪽 퀵메뉴  */
+    			showLeft.onclick = function() {
+    				classie.toggle( this, 'active' );
+    				classie.toggle( menuLeft, 'cbp-spmenu-open' );
 
+    			};
+    	showLeft_close.onclick = function() {
+    				classie.toggle( this, 'active' );
+    				classie.toggle( menuLeft, 'cbp-spmenu-open' );
 
-		</script>
-<!--//푸시 스크립트  -->
+    			};
 
-<!--모달 팝업 스크립트  -->
-<script src="../js/popup/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//stats.g.doubleclick.net/dc.js','ga');
-
-			ga('create', 'UA-5342062-6', 'noelboss.github.io');
-			ga('send', 'pageview');
-</script>
-<!--//모달 팝업 스크립트  -->
-<!-- 하단 스크립트 : 스크롤/시간차 -->
-<script src="../js/animate/wow.min.js"></script>
-<script src="../js/animate/custom.js"></script>
-</body></html>
+    </script>
+    <!-- 푸시 스크립트 -->
+    <!-- 하단 스크립트 : 스크롤/시간차 -->
+    <script src="../js/animate/wow.min.js"></script>
+    <script src="../js/animate/custom.js"></script>
+  </body>
+</html>

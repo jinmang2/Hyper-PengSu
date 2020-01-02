@@ -1,0 +1,244 @@
+/**** 감정분류: 배경  ****/
+
+.color_bg_blue{background-color: #3e7eff!important}
+.color_Anger{background-color: #ff0000 !important}
+.color_Contempt{background-color: #ff9900!important }
+.color_Disgust{background-color: #9900cc !important}
+.color_Fear{background-color: #ffcc00!important }
+.color_Happiness{background-color: #3074ff!important}
+.color_Neutral{background-color: #6666cc !important}
+.color_Sadness{background-color: #cc9966!important}
+.color_Surprise{background-color: #ff00cc!important }
+
+
+/**** 감정분류: 폰트   ****/
+.font_Anger{color: #ff0000!important }
+.font_Contempt{color: #ff9900!important }
+.font_Disgust{color: #9900cc!important }
+.font_Fear{color: #ffcc00!important }
+.font_Happiness{color: #3074ff!important}
+.font_Neutral{color: #6666cc!important }
+.font_Sadness{color: #cc9966!important}
+.font_Surprise{color: #ff00cc!important }
+
+/**** 감정분류: 폰트 메뉴 오버   ****/
+a.font_ov_Happiness{color: #000}
+a:hover.font_ov_Happiness{color: #3e7eff}
+
+a.font_ov_Anger{color: #000}
+a:hover.font_ov_Anger{color: #ff0000}
+
+a.font_ov_Contempt{color: #000}
+a:hover.font_ov_Contempt{color: #ff9900}
+
+a.font_ov_Disgust{color: #000}
+a:hover.font_ov_Disgust{color:  #9900cc}
+
+a.font_ov_Fear{color: #000}
+a:hover.font_ov_Fear{color:  #ffcc00}
+
+
+a.font_ov_Neutral{color: #000}
+a:hover.font_ov_Neutral{color:  #3074ff}
+
+a.font_ov_Sadness{color: #000}
+a:hover.font_ov_Sadness{color:  #cc9966}
+
+a.font_ov_Surprise{color: #000}
+a:hover.font_ov_Surprise{color:  #ff00cc}
+
+/**** 감정분류:탭 오버   ****/
+ul.tabs.tab_Happiness li.selected a, ul.tabs.tab_Happiness li.selected a:hover
+{  background-color: #3074ff!important; color: #fff;}
+
+ul.tabs.tab_Anger li.selected a, ul.tabs.tab_Anger li.selected a:hover
+{  background-color: #ff0000!important; color: #fff;}
+
+ul.tabs.tab_Contempt li.selected a, ul.tabs.tab_Contempt li.selected a:hover
+{  background-color: #ff9900!important; color: #fff;}
+
+ul.tabs.tab_Disgust li.selected a, ul.tabs.tab_Disgust li.selected a:hover
+{  background-color: #9900cc!important; color: #fff;}
+
+ul.tabs.tab_Fear li.selected a, ul.tabs.tab_Fear li.selected a:hover
+{  background-color: #ffcc00!important; color: #fff;}
+
+ul.tabs.tab_Neutral li.selected a, ul.tabs.tab_Neutral li.selected a:hover
+{  background-color: #6666cc!important; color: #fff;}
+
+ul.tabs.tab_Sadness li.selected a, ul.tabs.tab_Sadness li.selected a:hover
+{  background-color: #cc9966!important; color: #fff;}
+
+ul.tabs.tab_Surprise li.selected a, ul.tabs.tab_Surprise li.selected a:hover
+{  background-color: #ff00cc!important; color: #fff;}
+
+
+
+
+
+/**** 상단 배경이미지 ****/
+.sub_topbg1_Happiness{background: url(../images/emotion/Happiness/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Happiness{background: url(../images/emotion/Happiness/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Happiness{background: url(../images/emotion/Happiness/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Happiness{background: url(../images/emotion/Happiness/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Happiness{background: url(../images/emotion/Happiness/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Happiness{background: url(../images/emotion/Happiness/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+
+.sub_topbg1_Anger{background: url(../images/emotion/Anger/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Anger{background: url(../images/emotion/Anger/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Anger{background: url(../images/emotion/Anger/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Anger{background: url(../images/emotion/Anger/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Anger{background: url(../images/emotion/Anger/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Anger{background: url(../images/emotion/Anger/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+.sub_topbg1_Contempt{background: url(../images/emotion/Contempt/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Contempt{background: url(../images/emotion/Contempt/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Contempt{background: url(../images/emotion/Contempt/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Contempt{background: url(../images/emotion/Contempt/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Contempt{background: url(../images/emotion/Contempt/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Contempt{background: url(../images/emotion/Contempt/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+.sub_topbg1_Disgust{background: url(../images/emotion/Disgust/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Disgust{background: url(../images/emotion/Disgust/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Disgust{background: url(../images/emotion/Disgust/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Disgust{background: url(../images/emotion/Disgust/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Disgust{background: url(../images/emotion/Disgust/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Disgust{background: url(../images/emotion/Disgust/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+.sub_topbg1_Fear{background: url(../images/emotion/Fear/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Fear{background: url(../images/emotion/Fear/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Fear{background: url(../images/emotion/Fear/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Fear{background: url(../images/emotion/Fear/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Fear{background: url(../images/emotion/Fear/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Fear{background: url(../images/emotion/Fear/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+.sub_topbg1_Neutral{background: url(../images/emotion/Neutral/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Neutral{background: url(../images/emotion/Neutral/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Neutral{background: url(../images/emotion/Neutral/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Neutral{background: url(../images/emotion/Neutral/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Neutral{background: url(../images/emotion/Neutral/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Neutral{background: url(../images/emotion/Neutral/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+.sub_topbg1_Sadness{background: url(../images/emotion/Sadness/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Sadness{background: url(../images/emotion/Sadness/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Sadness{background: url(../images/emotion/Sadness/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Sadness{background: url(../images/emotion/Sadness/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Sadness{background: url(../images/emotion/Sadness/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Sadness{background: url(../images/emotion/Sadness/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+.sub_topbg1_Surprise{background: url(../images/emotion/Surprise/sub_topimg01.jpg);background-position: center center;  background-size: cover}
+.sub_topbg2_Surprise{background: url(../images/emotion/Surprise/sub_topimg02.jpg);background-position: center center;  background-size: cover}
+.sub_topbg3_Surprise{background: url(../images/emotion/Surprise/sub_topimg03.jpg);background-position: center center;  background-size: cover}
+.sub_topbg4_Surprise{background: url(../images/emotion/Surprise/sub_topimg04.jpg);background-position: center center;  background-size: cover}
+.sub_topbg5_Surprise{background: url(../images/emotion/Surprise/sub_topimg05.jpg);background-position: center center;  background-size: cover}
+.sub_topbg6_Surprise{background: url(../images/emotion/Surprise/sub_topimg06.jpg);background-position: center center;  background-size: cover}
+
+
+/****메****/
+.main_top_Happiness{background: url("../images/emotion/Happiness/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+.main_top_Anger{background: url("../images/emotion/Anger/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+.main_top_Contempt{background: url("../images/emotion/Contempt/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+.main_top_Disgust{background: url("../images/emotion/Disgust/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+.main_top_Fear{background: url("../images/emotion/Fear/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+.main_top_Neutral{background: url("../images/emotion/Neutral/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+.main_top_Sadness{background: url("../images/emotion/Sadness/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+.main_top_Surprise{background: url("../images/emotion/Surprise/main_topbg.jpg") ;background-position: center center;  background-size: cover}
+
+
+.main_tab_Happiness{background: url("../images/emotion/Happiness/main_probg.jpg");background-size: cover; }
+.main_tab_Anger{background: url("../images/emotion/Anger/main_probg.jpg");background-size: cover; }
+.main_tab_Contempt{background: url("../images/emotion/Contempt/main_probg.jpg");background-size: cover; }
+.main_tab_Disgust{background: url("../images/emotion/Disgust/main_probg.jpg");background-size: cover; }
+.main_tab_Fear{background: url("../images/emotion/Fear/main_probg.jpg");background-size: cover; }
+.main_tab_Neutral{background: url("../images/emotion/Neutral/main_probg.jpg");background-size: cover; }
+.main_tab_Sadness{background: url("../images/emotion/Sadness/main_probg.jpg");background-size: cover; }
+.main_tab_Surprise{background: url("../images/emotion/Surprise/main_probg.jpg");background-size: cover; }
+
+.main_tab_bg2{background: url("../images/main/main_probg2.jpg");background-size: cover; background-position:40% top  }
+.main_tab_bg3{background: url("../images/main/main_probg3.jpg");background-size: cover; background-position:40% top }
+.main_tab_bg4{background: url("../images/main/main_probg4.jpg");background-size: cover; background-position:40% top }
+
+
+/**** 연혁 ****/
+.infobox_Happiness{ background: url("../images/emotion/Happiness/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+.infobox_Anger{ background: url("../images/emotion/Anger/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+.infobox_Contempt{ background: url("../images/emotion/Contempt/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+.infobox_Disgust{ background: url("../images/emotion/Disgust/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+.infobox_Fear{ background: url("../images/emotion/Fear/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+.infobox_Neutral{ background: url("../images/emotion/Neutral/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+.infobox_Sadness{ background: url("../images/emotion/Sadness/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+.infobox_Surprise{ background: url("../images/emotion/Surprise/about_yeartop.jpg") ;background-position: center center;  background-size: cover}
+
+
+
+
+
+
+
+.cacenter_Happiness{ background: url("../images/emotion/Happiness/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter_Anger{ background: url("../images/emotion/Anger/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter_Contempt{ background: url("../images/emotion/Contempt/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter_Disgust{ background: url("../images/emotion/Disgust/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter_Fear{ background: url("../images/emotion/Fear/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter_Neutral{ background: url("../images/emotion/Neutral/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter_Sadness{ background: url("../images/emotion/Sadness/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter_Surprise{ background: url("../images/emotion/Surprise/about_csbg.jpg"); background-position: center center; background-size: cover}
+
+
+
+
+/**** 세미나 신청 ****/
+.cacenter2_Happiness{background: url("../images/emotion/Happiness/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter2_Anger{background: url("../images/emotion/Anger/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter2_Contempt{background: url("../images/emotion/Contempt/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter2_Disgust{background: url("../images/emotion/Disgust/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter2_Fear{background: url("../images/emotion/Fear/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter2_Neutral{background: url("../images/emotion/Neutral/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter2_Sadness{background: url("../images/emotion/Sadness/about_csbg.jpg"); background-position: center center; background-size: cover}
+.cacenter2_Surprise{background: url("../images/emotion/Surprise/about_csbg.jpg"); background-position: center center; background-size: cover}
+
+
+
+/**** 세미나  마우스오버 ****/
+.inline_Happiness, .inline_Anger, .inline_Contempt, .inline_Disgust, .inline_Fear, .inline_Neutral, .inline_Sadness, .inline_surprised{transition: all 0.5s;
+-moz-transition: all 0.5s; /* Firefox 4 */
+-webkit-transition: all 0.5s; /* Safari and Chrome */
+-o-transition: all 0.5s; /* Opera */  ;
+}
+
+
+ul.list li .inline_Happiness{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid  #3e7eff!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Happiness{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #3e7eff!important;  opacity: 1}
+
+ul.list li .inline_Anger{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid #ff0000!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Anger{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #ff0000!important;  opacity: 1}
+
+ul.list li .inline_Contempt{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid  #ff9900!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Contempt{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #ff9900!important;  opacity: 1}
+
+ul.list li .inline_Disgust{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid  #9900cc!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Disgust{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #9900cc!important;  opacity: 1}
+
+ul.list li .inline_Fear{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid #ffcc00!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Fear{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #ffcc00!important;  opacity: 1}
+
+ul.list li .inline_Neutral{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid  #6666cc!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Neutral{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #6666cc!important;  opacity: 1}
+
+ul.list li .inline_Sadness{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid  #cc9966!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Sadness{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #cc9966!important;  opacity: 1}
+
+ul.list li .inline_Surprise{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 1px solid  #ff00cc!important;  z-index: 9; cursor: pointer; opacity: 0}
+ul.list li:hover .inline_Surprise{position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;  float: left;   box-sizing: border-box; border: 10px solid  #ff00cc!important;  opacity: 1}
+
+
+/**** 말풍선  ****/
+.triangle_Happiness{   border-top:10px solid #3074ff; }
+.triangle_Anger{   border-top:10px solid #ff0000; }
+.triangle_Contempt{   border-top:10px solid #ff9900; }
+.triangle_Disgust{   border-top:10px solid #9900cc; }
+.triangle_Fear{   border-top:10px solid #ffcc00; }
+.triangle_Neutral{   border-top:10px solid #6666cc; }
+.triangle_Sadness{   border-top:10px solid #cc9966; }
+.triangle_Surprise{   border-top:10px solid #ff00cc; }
