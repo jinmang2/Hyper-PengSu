@@ -1,0 +1,203 @@
+/**********Technology**************/
+
+
+/**** pc ****/
+@media only all and (min-width:1301px) {
+
+.messenger{width: 360px; height: 610px; position: fixed; right:20px ; bottom: 50px;  border-radius:30px; background-color: #fff;   box-shadow:3px 3px 30px rgba(0,0,0,0.3); overflow: hidden; z-index: 999999999999999999 }
+
+
+.messenger2{width: 350px;  position: fixed; right:50px ; bottom:200px;z-index: 999999999999999999 }
+.messenger2 .photo{position: absolute; right: 0px; top: 0px; width:120px; height: 120px; border-radius: 100%; overflow: hidden; margin-left: -60px;  z-index: 99; overflow: hidden}
+.messenger2  .photo img{ width: 100%;  cursor: pointer}
+
+.messenger2 .bubble{max-width: calc(100% - 70px);float: left ; border-radius: 10px; padding: 10px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 14px; color: #fff;  box-shadow:3px 3px 20px rgba(0,0,0,0.1); position: absolute; left: 0px ; top: 40px;cursor: pointer}
+.messenger2 .bubble .triangle{   background:transparent;
+    width :0px;
+    height:0PX;
+    border-right: 10px solid transparent;
+    position: absolute;right: -4px; top: 15px; transform:rotate(135deg);  }
+
+}
+/**** 테블릿 ****/
+@media all and (max-width:1300px) and (min-width:768px) {
+
+.messenger{width: 360px; height: 610px; position: fixed; right:20px ; bottom: 50px;  border-radius:30px; background-color: #fff;   box-shadow:3px 3px 30px rgba(0,0,0,0.3); overflow: hidden; z-index: 999999999999999999 }
+
+
+.messenger2{width: 360px;  position: fixed; right:50px ; bottom:200px;z-index: 999999999999999999 }
+.messenger2 .photo{position: absolute; right: 0px; top: 0px; width:120px; height: 120px; border-radius: 100%; overflow: hidden; margin-left: -60px;  z-index: 99; overflow: hidden; cursor: pointer}
+.messenger2  .photo img{ width: 100%;  }
+
+.messenger2 .bubble{max-width: calc(100% - 80px);float: left ; border-radius: 10px; padding: 10px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 13px; color: #fff;  box-shadow:3px 3px 20px rgba(0,0,0,0.1); position: absolute; left: 0px ; top: 30px;cursor: pointer}
+.messenger2 .bubble .triangle{   background:transparent;
+    width :0px;
+    height:0PX;
+    border-right: 10px solid transparent;
+     position: absolute;right: -4px; top: 15px; transform:rotate(135deg);  }
+
+}
+/**** 모바일 ****/
+@media only all and (max-width:767px) {
+
+.messenger{width: 100%; height:  100%; position: fixed;left:0px ; bottom: 0px;   background-color: #fff;   box-shadow:3px 3px 30px rgba(0,0,0,0.3); overflow: hidden; z-index: 999999999999999999 }
+
+
+.messenger2{width: 100%;   position: fixed; bottom:100px;z-index: 999999999999999999 }
+.messenger2 .photo{position: absolute; right:10px; top: 0px; width:90px; height: 90px; border-radius: 100%; overflow: hidden; margin-left: -45px;  z-index: 99; overflow: hidden; cursor: pointer}
+.messenger2  .photo img{ width: 100%;  }
+
+.messenger2 .bubble{max-width: calc(100% - 90px);float: left ; border-radius: 10px; padding: 10px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 13px; color: #fff;  box-shadow:3px 3px 20px rgba(0,0,0,0.1); position: absolute; right: 110px ; top: 30px;cursor: pointer}
+.messenger2 .bubble .triangle{   background:transparent;
+    width :0px;
+    height:0PX;
+    border-right: 10px solid transparent;
+   position: absolute;right: -4px; top: 15px; transform:rotate(135deg);  }
+
+}
+
+
+
+
+/**** pc ****/
+@media only all and (min-width:768px) {.ms_top{width:100%; height: 150px; float: left; padding: 20px; box-sizing: border-box ; position: relative}
+.ms_top .name{position: absolute; left: 20px; top: 20px ; color: #fff; font-weight: 700 }
+.ms_top .st{position: absolute; left: 20px; top: 50px ; color: #fff; padding-right: 30px;; }
+.ms_top .st .st_icon{position: absolute; right: 0px; top:0px ;  width: 20px; height: 20px; border-radius: 100%;  border: 3px solid #fff}
+.ms_top .close{position: absolute; right:20px; top: 20px ; color: #fff;  cursor: pointer}
+
+.ms_top .photo{position: absolute; left:50%; top: 50px ; border-radius:100%; ; width:120px; height: 120px; overflow: hidden; margin-left: -60px;  z-index: 99; overflow: hidden}
+.ms_top .photo img{ width: 100%;  }
+.st_color1{ background-color: #ccff00}
+
+
+.ms_talk{width:100%; height: 430px; float: left; padding: 20px; box-sizing: border-box ; position: relative; background-color: #eaeef4;   margin-top: -30px; padding-top:60px;
+
+border-top-left-radius: 30px;
+	border-top-right-radius:  30px;
+
+	-moz-border-top-left-radius:  30px;
+	-moz-border-top-left-radius:  30px;
+
+	-webkit-border-topleft-radius: 30px;;
+	-webkit-border-topleft-radius:  30px;
+
+}
+.ms_talk .talk_you{width:100%; float: left; padding-left: 50px; box-sizing: border-box; position: relative
+}
+.ms_talk .talk_you .photo{; position: absolute; left: 0px; top: 0px; width:40px; height: 40px; ; overflow: hidden; border-radius: 100%;}
+.ms_talk .talk_you .photo img{width:100%;
+}
+.ms_talk .talk_you .bubble{max-width: calc(100% - 100px);float: left ; border-radius: 10px; background-color: #fff; padding: 10px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 12px;  margin-bottom: 10px; box-shadow:3px 3px 20px rgba(0,0,0,0.1);}
+.ms_talk .talk_you .bubble .triangle{   background:transparent;
+    width :0px;
+    height:0PX;
+    border-right: 10px solid transparent;
+    border-top:10px solid #fff; position: absolute; left: -5px; top: 15px; transform:rotate(-45deg) }
+
+
+.ms_talk .talk_you .bubble .time{width:80px;float: left ; color: #333; font-size: 11px; position: relative; bottom: 0px;  padding-left: 10px;  padding-top: 15px;position: absolute; bottom: 0px; right: -80px; }
+
+.ms_talk .talk_you .bubble_down{max-width: calc(100% - 100px);float: left ; padding: 10px 50px 10px 20px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 12px;  margin-bottom: 10px; color: #fff;  background: url("../images/com/btn_icon_save.png"); background-color: #6b7ca2; border-radius: 40px; background-position:90% center; background-repeat: no-repeat; cursor: pointer}
+
+.ms_talk .talk_me{width:100%; float: left; box-sizing: border-box; position: relative
+}
+.ms_talk .talk_me .bubble{max-width: calc(100% - 100px);float: right ; border-radius: 10px; background-color: #fff; padding: 10px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 12px;  margin-bottom: 10px;  box-shadow:3px 3px 20px rgba(0,0,0,0.1);}
+.ms_talk .talk_me .bubble .triangle{   background:transparent;
+    width :0px;
+    height:0PX;
+    border-right: 10px solid transparent;
+    border-top:10px solid #fff; position: absolute; right: -5px; top: 15px; transform:rotate(135deg); }
+
+
+.ms_talk .talk_me .bubble .time{width:80px;float: left ; color: #333; font-size: 11px; position: relative; bottom: 0px;  padding-left: 10px;  padding-top: 15px;position: absolute; bottom: 0px; left: -65px; }
+
+.ms_talk .talk_me .bubble_down{max-width: calc(100% - 100px);float: right; padding: 10px 50px 10px 20px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 12px;  margin-bottom: 10px; color: #fff;  background: url("../images/com/btn_icon_save.png"); background-color: #6b7ca2; border-radius: 40px; background-position:90% center; background-repeat: no-repeat; cursor: pointer}
+
+
+
+
+.ms_talk_wt{width:100%; height:60px; float: left; padding:0px 20px; box-sizing: border-box ;
+	position: relative
+}
+.ms_talk_wt input{width:calc(100% - 50px); float: left; border: none; height: 60px;; z-index: 9; position: relative ;  box-sizing: border-box
+}
+
+.ms_talk_wt .wr_btn{position: absolute; right: 15px;top:7px; width: 45px; height: 45px; border-radius: 100%; overflow: hidden;   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+}
+
+/**** 모바일 ****/
+@media only all and (max-width:767px) {.ms_top{width:100%; height: 150px; float: left; padding: 20px; box-sizing: border-box ; position: relative}
+.ms_top .name{position: absolute; left: 20px; top: 20px ; color: #fff; font-weight: 700 }
+.ms_top .st{position: absolute; left: 20px; top: 50px ; color: #fff; padding-right: 30px;; }
+.ms_top .st .st_icon{position: absolute; right: 0px; top:0px ;  width: 20px; height: 20px; border-radius: 100%;  border: 3px solid #fff}
+.ms_top .close{position: absolute; right:20px; top: 20px ; color: #fff;cursor: pointer }
+
+.ms_top .photo{position: absolute; left:50%; top: 60px ; border-radius:100%; ; width:100px; height: 100px; overflow: hidden; margin-left: -50px;  z-index: 99; overflow: hidden}
+.ms_top .photo img{ width: 100%;  }
+.st_color1{ background-color: #ccff00}
+
+
+.ms_talk{width:100%; height: 430px; float: left; padding: 20px; box-sizing: border-box ; position: relative; background-color: #eaeef4;   margin-top: -30px; padding-top:60px;
+
+border-top-left-radius: 15px;
+	border-top-right-radius:  15px;
+
+	-moz-border-top-left-radius:  15px;
+	-moz-border-top-left-radius:  15px;
+
+	-webkit-border-topleft-radius: 15px;;
+	-webkit-border-topleft-radius:  15px;
+
+}
+.ms_talk .talk_you{width:100%; float: left; padding-left: 50px; box-sizing: border-box; position: relative
+}
+.ms_talk .talk_you .photo{; position: absolute; left: 0px; top: 0px; width:40px; height: 40px; ; overflow: hidden; border-radius: 100%;}
+.ms_talk .talk_you .photo img{width:100%;
+}
+.ms_talk .talk_you .bubble{max-width: calc(100% - 70px);float: left ; border-radius: 10px; background-color: #fff; padding:7px; box-sizing: border-box; line-height: 16px; position: relative; font-size: 12px;  margin-bottom: 10px; box-shadow:3px 3px 20px rgba(0,0,0,0.1);}
+.ms_talk .talk_you .bubble .triangle{   background:transparent;
+    width :0px;
+    height:0PX;
+    border-right: 10px solid transparent;
+    border-top:10px solid #fff; position: absolute; left: -5px; top: 15px; transform:rotate(-45deg) }
+
+
+.ms_talk .talk_you .bubble .time{width:80px;float: left ; color: #333; font-size: 11px; position: relative; bottom: 0px;  padding-left: 10px;  padding-top: 15px;position: absolute; bottom: 0px; right: -80px; }
+
+.ms_talk .talk_you .bubble_down{max-width: calc(100% - 60px);float: left ; padding:7px 50px 7px 10px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 12px;  margin-bottom: 10px; color: #fff;  background: url("../images/com/btn_icon_save.png"); background-color: #6b7ca2; border-radius: 40px; background-position:90% center; background-repeat: no-repeat; cursor: pointer}
+
+.ms_talk .talk_me{width:100%; float: left; box-sizing: border-box; position: relative
+}
+.ms_talk .talk_me .bubble{max-width: calc(100% - 100px);float: right ; border-radius: 10px; background-color: #fff; padding: 7px; box-sizing: border-box; line-height: 16px; position: relative; font-size: 12px;  margin-bottom: 10px;  box-shadow:3px 3px 20px rgba(0,0,0,0.1);}
+.ms_talk .talk_me .bubble .triangle{   background:transparent;
+    width :0px;
+    height:0PX;
+    border-right: 10px solid transparent;
+    border-top:10px solid #fff; position: absolute; right: -5px; top: 15px; transform:rotate(135deg); }
+
+
+.ms_talk .talk_me .bubble .time{width:80px;float: left ; color: #333; font-size: 11px; position: relative; bottom: 0px;  padding-left: 10px;  padding-top: 15px;position: absolute; bottom: 0px; left: -65px; }
+
+.ms_talk .talk_me .bubble_down{max-width: calc(100% - 100px);float: right; padding: 10px 50px 10px 20px; box-sizing: border-box; line-height: 20px; position: relative; font-size: 12px;  margin-bottom: 10px; color: #fff;  background: url("../images/com/btn_icon_save.png"); background-color: #6b7ca2; border-radius: 40px; background-position:90% center; background-repeat: no-repeat; cursor: pointer}
+
+
+
+
+.ms_talk_wt{width:100%; height:60px; float: left; padding:0px 20px; box-sizing: border-box ;
+	position: relative
+}
+.ms_talk_wt input{width:calc(100% - 50px); float: left; border: none; height: 60px;; z-index: 9; position: relative ;  box-sizing: border-box
+}
+
+.ms_talk_wt .wr_btn{position: absolute; right: 15px;top:7px; width: 45px; height: 45px; border-radius: 100%; overflow: hidden;   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+}
